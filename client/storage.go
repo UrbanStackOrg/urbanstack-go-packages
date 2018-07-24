@@ -1,9 +1,9 @@
 /*
- * Copyright Morpheo Org. 2017
+ * Copyright UrbanStack Org. 2017
  *
- * contact@morpheo.co
+ * contact@urbanstack.co
  *
- * This software is part of the Morpheo project, an open-source machine
+ * This software is part of the UrbanStack project, an open-source machine
  * learning platform.
  *
  * This software is governed by the CeCILL license, compatible with the
@@ -50,7 +50,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/MorpheoOrg/morpheo-go-packages/common"
+	"github.com/UrbanStackOrg/urbanstack-go-packages/common"
 	"github.com/satori/go.uuid"
 )
 
@@ -456,7 +456,7 @@ func (s *StorageAPIMock) PostPrediction(prediction *common.Prediction, predReade
 // TargzedMock create a Readcloser which can be ungzip-ed
 func TargzedMock() (io.ReadCloser, error) {
 	// Create tmp file
-	tmpPath := filepath.Join(os.TempDir(), "morpheo_mock")
+	tmpPath := filepath.Join(os.TempDir(), "urbanstack_mock")
 	if err := ioutil.WriteFile(tmpPath, []byte("mock"), 0777); err != nil {
 		return nil, fmt.Errorf("Error writing file: %s", err)
 	}

@@ -1,9 +1,9 @@
 /*
- * Copyright Morpheo Org. 2017
+ * Copyright UrbanStack Org. 2017
  *
- * contact@morpheo.co
+ * contact@urbanstack.co
  *
- * This software is part of the Morpheo project, an open-source machine
+ * This software is part of the UrbanStack project, an open-source machine
  * learning platform.
  *
  * This software is governed by the CeCILL license, compatible with the
@@ -41,13 +41,13 @@ import (
 	"strconv"
 	"strings"
 
-	// "github.com/MorpheoOrg/morpheo-go-packages/common"
+	// "github.com/UrbanStackOrg/urbanstack-go-packages/common"
 
 	"github.com/hyperledger/fabric-sdk-go/api/apitxn"
 	"github.com/hyperledger/fabric-sdk-go/def/fabapi"
 )
 
-// Peer describes Morpheo Peer's API
+// Peer describes UrbanStack Peer's API
 type Peer interface {
 	Query(queryFcn string, queryArgs []string) ([]byte, error)
 	Invoke(txFcn string, txArgs []string) (string, []byte, error)
